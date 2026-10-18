@@ -1,0 +1,82 @@
+plugins { id 'com.android.application' }
+def signing = new Properties()
+def signingFile = rootProject.file('signing/release.properties')
+if (signingFile.exists()) signingFile.withInputStream { signing.load(it) }
+def myket = new Properties()
+if (rootProject.file('myket.properties').exists()) rootProject.file('myket.properties').withInputStream { myket.load(it) }
+def publicKey = myket.getProperty('publicKey', '').replaceAll('\\s', '')
+if (publicKey && !(publicKey ==~ /[A-Za-z0-9+\/=]+/)) throw new GradleException('Invalid base64 public key')
+android {
+    namespace 'com.toosarax.jetjo'
+    compileSdk 34
+    defaultConfig {
+        applicationId 'com.neonrush.arcade'
+        minSdk 24
+        targetSdk 34
+        versionCode Integer.parseInt(providers.gradleProperty('releaseVersionCode').getOrElse('206'))
+        versionName '2.0.0'
+        manifestPlaceholders = [marketApplicationId:'ir.mservices.market', marketBindAddress:'ir.mservices.market.InAppBillingService.BIND', marketPermission:'ir.mservices.market.BILLING']
+        buildConfigField 'String', 'IAB_PUBLIC_KEY', '"' + publicKey + '"'
+        testInstrumentationRunner 'android.test.InstrumentationTestRunner'
+    }
+    signingConfigs {
+        release {
+            if (!signing.isEmpty()) {
+                storeFile rootProject.file(signing.getProperty('storeFile'))
+                storePassword signing.getProperty('storePassword')
+                keyAlias signing.getProperty('keyAlias')
+                keyPassword signing.getProperty('keyPassword')
+            }
+        }
+    }
+    buildTypes {
+        debug { applicationIdSuffix '.debug' }
+        release {
+            minifyEnabled true
+            shrinkResources true
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildTypes {
+        preview {
+            initWith release
+            applicationIdSuffix '.preview'
+            versionNameSuffix '-preview'
+            signingConfig signingConfigs.debug
+            matchingFallbacks = ['release']
+        }
+        qa {
+            initWith debug
+            applicationIdSuffix '.qa'
+            versionNameSuffix '-qa'
+            matchingFallbacks = ['debug']
+            buildConfigField 'boolean', 'GALLERY_CAPTURE', providers.gradleProperty('galleryCapture').getOrElse('false')
+        }
+    }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+    buildFeatures { buildConfig true }
+    androidResources { noCompress += ['wav'] }
+    lint { abortOnError true; checkReleaseBuilds true }
+}
+dependencies {
+    implementation 'com.github.myketstore:myket-billing-client:1.19'
+    testImplementation 'junit:junit:4.13.2'
+}
+
+tasks.register('verifyStoreRelease') {
+    doLast {
+        if (!publicKey) throw new GradleException('Set publicKey in myket.properties')
+        if (signing.isEmpty()) throw new GradleException('Configure the SAME published signing key in signing/release.properties')
+        if (!providers.gradleProperty('releaseVersionCode').isPresent()) throw new GradleException('Supply -PreleaseVersionCode greater than the published version')
+    }
+}
+tasks.register('storeRelease') { dependsOn 'verifyStoreRelease', 'assembleRelease' }
+tasks.matching { it.name == 'preReleaseBuild' }.configureEach { mustRunAfter 'verifyStoreRelease' }
+
+// The soundtrack is reproducible source output; keep generated WAVs out of Git.
+tasks.register('prepareVersion2Music', Exec) {
+    workingDir rootProject.projectDir
+    commandLine providers.gradleProperty('pythonExecutable').getOrElse('python'), 'tools/prepare_music.py'
+}
+tasks.named('preBuild').configure { dependsOn 'prepareVersion2Music' }

@@ -1,0 +1,18 @@
+pluginManagement { repositories { google(); mavenCentral(); gradlePluginPortal() } }
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        // Opt-in fallback for environments where Google's Maven endpoint returns 404.
+        if (providers.gradleProperty('googleMirror').getOrElse('false').toBoolean()) {
+            maven {
+                url 'https://maven.aliyun.com/repository/google'
+                content { includeGroupByRegex 'androidx.*'; includeGroupByRegex 'com.google.android.*' }
+            }
+        }
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io'; content { includeGroup 'com.github.myketstore' } }
+    }
+}
+rootProject.name = 'JET'
+include ':app'

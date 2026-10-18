@@ -1,0 +1,308 @@
+{
+  "schema": 2,
+  "pack": "JET Worlds",
+  "license": "CC0-1.0",
+  "release_family": "expanded-local-multiplayer",
+  "music_arrangement": "Original whole-bar intro, theme, answer, breakdown and finale; seamless cyclic release tails; memory-bounded PCM rendering",
+  "origin": "Original algorithmic illustrations and original synthesized compositions; no third-party media.",
+  "worlds": [
+    {
+      "id": "aurora",
+      "index": 0,
+      "name_en": "Aurora Gardens",
+      "name_fa": "باغ شفق",
+      "accent": "#5befc4",
+      "background": "content/worlds/aurora.jpg",
+      "music": "content/music/aurora_drift.wav",
+      "background_width": 1080,
+      "background_height": 1920
+    },
+    {
+      "id": "solar",
+      "index": 1,
+      "name_en": "Solar Frontier",
+      "name_fa": "مرز خورشید",
+      "accent": "#ffb14a",
+      "background": "content/worlds/solar.jpg",
+      "music": "content/music/solar_heartbeat.wav",
+      "background_width": 1080,
+      "background_height": 1920
+    },
+    {
+      "id": "ocean",
+      "index": 2,
+      "name_en": "Ocean of Stars",
+      "name_fa": "اقیانوس ستاره‌ها",
+      "accent": "#3ebdfb",
+      "background": "content/worlds/ocean.jpg",
+      "music": "content/music/ocean_glide.wav",
+      "background_width": 1080,
+      "background_height": 1920
+    },
+    {
+      "id": "candy",
+      "index": 3,
+      "name_en": "Candy Cosmos",
+      "name_fa": "کهکشان آب‌نبات",
+      "accent": "#fc7fc1",
+      "background": "content/worlds/candy.jpg",
+      "music": "content/music/candy_bounce.wav",
+      "background_width": 1080,
+      "background_height": 1920
+    },
+    {
+      "id": "cyber",
+      "index": 4,
+      "name_en": "Neon Metropolis",
+      "name_fa": "شهر نئونی",
+      "accent": "#59e9db",
+      "background": "content/worlds/cyber.jpg",
+      "music": "content/music/cyber_cruise.wav",
+      "background_width": 1080,
+      "background_height": 1920
+    },
+    {
+      "id": "crystal",
+      "index": 5,
+      "name_en": "Crystal Caverns",
+      "name_fa": "غار بلور",
+      "accent": "#8ba1fe",
+      "background": "content/worlds/crystal.jpg",
+      "music": "content/music/crystal_echo.wav",
+      "background_width": 1080,
+      "background_height": 1920
+    },
+    {
+      "id": "lunar",
+      "index": 6,
+      "name_en": "Moonlight Station",
+      "name_fa": "ایستگاه مهتاب",
+      "accent": "#a1b5fa",
+      "background": "content/worlds/lunar.jpg",
+      "music": "content/music/ocean_glide.wav",
+      "background_width": 1080,
+      "background_height": 1920
+    },
+    {
+      "id": "rainbow",
+      "index": 7,
+      "name_en": "Rainbow Runway",
+      "name_fa": "مسیر رنگین‌کمان",
+      "accent": "#81f0b1",
+      "background": "content/worlds/rainbow.jpg",
+      "music": "content/music/candy_bounce.wav",
+      "background_width": 1080,
+      "background_height": 1920
+    },
+    {
+      "id": "forest",
+      "index": 8,
+      "name_en": "Firefly Forest",
+      "name_fa": "جنگل شب‌تاب",
+      "accent": "#72e484",
+      "background": "content/worlds/forest.jpg",
+      "music": "content/music/forest_fireflies.wav",
+      "background_width": 1080,
+      "background_height": 1920
+    },
+    {
+      "id": "coral",
+      "index": 9,
+      "name_en": "Coral Kingdom",
+      "name_fa": "سرزمین مرجان",
+      "accent": "#4ae2d7",
+      "background": "content/worlds/coral.jpg",
+      "music": "content/music/coral_waltz.wav",
+      "background_width": 1080,
+      "background_height": 1920
+    },
+    {
+      "id": "toy",
+      "index": 10,
+      "name_en": "Toy Planet",
+      "name_fa": "سیاره اسباب‌بازی",
+      "accent": "#fdc561",
+      "background": "content/worlds/toy.jpg",
+      "music": "content/music/toy_parade.wav",
+      "background_width": 1080,
+      "background_height": 1920
+    },
+    {
+      "id": "arcade",
+      "index": 11,
+      "name_en": "Arcade Circuit",
+      "name_fa": "مدار آرکید",
+      "accent": "#f773e9",
+      "background": "content/worlds/arcade.jpg",
+      "music": "content/music/arcade_flux.wav",
+      "background_width": 1080,
+      "background_height": 1920
+    },
+    {
+      "id": "sunset",
+      "index": 12,
+      "name_en": "Sunset Islands",
+      "name_fa": "جزیره‌های غروب",
+      "accent": "#fba264",
+      "background": "content/worlds/sunset.jpg",
+      "music": "content/music/sunset_soar.wav",
+      "background_width": 1080,
+      "background_height": 1920
+    },
+    {
+      "id": "volcano",
+      "index": 13,
+      "name_en": "Ember Volcano",
+      "name_fa": "آتشفشان اخگر",
+      "accent": "#ff8b3f",
+      "background": "content/worlds/volcano.jpg",
+      "music": "content/music/solar_heartbeat.wav",
+      "background_width": 1080,
+      "background_height": 1920
+    },
+    {
+      "id": "snow",
+      "index": 14,
+      "name_en": "Snowflake Peaks",
+      "name_fa": "قله‌های برفی",
+      "accent": "#a5e1fe",
+      "background": "content/worlds/snow.jpg",
+      "music": "content/music/crystal_echo.wav",
+      "background_width": 1080,
+      "background_height": 1920
+    },
+    {
+      "id": "spaceport",
+      "index": 15,
+      "name_en": "Starship Harbor",
+      "name_fa": "بندر ستاره‌پیما",
+      "accent": "#87d3f4",
+      "background": "content/worlds/spaceport.jpg",
+      "music": "content/music/spaceport_launch.wav",
+      "background_width": 1080,
+      "background_height": 1920
+    }
+  ],
+  "tracks": [
+    {
+      "id": "aurora_drift",
+      "title": "Aurora Drift",
+      "path": "content/music/aurora_drift.wav",
+      "duration_seconds": 112.0,
+      "bpm": 120,
+      "sample_rate": 44100,
+      "channels": 2,
+      "encoding": "PCM S16LE"
+    },
+    {
+      "id": "solar_heartbeat",
+      "title": "Solar Heartbeat",
+      "path": "content/music/solar_heartbeat.wav",
+      "duration_seconds": 113.14285714285714,
+      "bpm": 140,
+      "sample_rate": 44100,
+      "channels": 2,
+      "encoding": "PCM S16LE"
+    },
+    {
+      "id": "ocean_glide",
+      "title": "Ocean Glide",
+      "path": "content/music/ocean_glide.wav",
+      "duration_seconds": 115.2,
+      "bpm": 100,
+      "sample_rate": 44100,
+      "channels": 2,
+      "encoding": "PCM S16LE"
+    },
+    {
+      "id": "candy_bounce",
+      "title": "Candy Bounce",
+      "path": "content/music/candy_bounce.wav",
+      "duration_seconds": 112.0,
+      "bpm": 120,
+      "sample_rate": 44100,
+      "channels": 2,
+      "encoding": "PCM S16LE"
+    },
+    {
+      "id": "cyber_cruise",
+      "title": "Cyber Cruise",
+      "path": "content/music/cyber_cruise.wav",
+      "duration_seconds": 116.57142857142857,
+      "bpm": 140,
+      "sample_rate": 44100,
+      "channels": 2,
+      "encoding": "PCM S16LE"
+    },
+    {
+      "id": "crystal_echo",
+      "title": "Crystal Echo",
+      "path": "content/music/crystal_echo.wav",
+      "duration_seconds": 112.0,
+      "bpm": 90,
+      "sample_rate": 44100,
+      "channels": 2,
+      "encoding": "PCM S16LE"
+    },
+    {
+      "id": "forest_fireflies",
+      "title": "Forest Fireflies",
+      "path": "content/music/forest_fireflies.wav",
+      "duration_seconds": 113.45453514739229,
+      "bpm": 110,
+      "sample_rate": 44100,
+      "channels": 2,
+      "encoding": "PCM S16LE"
+    },
+    {
+      "id": "coral_waltz",
+      "title": "Coral Waltz",
+      "path": "content/music/coral_waltz.wav",
+      "duration_seconds": 115.55555555555556,
+      "bpm": 108,
+      "sample_rate": 44100,
+      "channels": 2,
+      "encoding": "PCM S16LE"
+    },
+    {
+      "id": "toy_parade",
+      "title": "Toy Parade",
+      "path": "content/music/toy_parade.wav",
+      "duration_seconds": 112.0,
+      "bpm": 120,
+      "sample_rate": 44100,
+      "channels": 2,
+      "encoding": "PCM S16LE"
+    },
+    {
+      "id": "arcade_flux",
+      "title": "Arcade Flux",
+      "path": "content/music/arcade_flux.wav",
+      "duration_seconds": 113.33333333333333,
+      "bpm": 144,
+      "sample_rate": 44100,
+      "channels": 2,
+      "encoding": "PCM S16LE"
+    },
+    {
+      "id": "sunset_soar",
+      "title": "Sunset Soar",
+      "path": "content/music/sunset_soar.wav",
+      "duration_seconds": 115.0,
+      "bpm": 96,
+      "sample_rate": 44100,
+      "channels": 2,
+      "encoding": "PCM S16LE"
+    },
+    {
+      "id": "spaceport_launch",
+      "title": "Spaceport Launch",
+      "path": "content/music/spaceport_launch.wav",
+      "duration_seconds": 116.36362811791383,
+      "bpm": 132,
+      "sample_rate": 44100,
+      "channels": 2,
+      "encoding": "PCM S16LE"
+    }
+  ]
+}

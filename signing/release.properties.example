@@ -1,0 +1,5 @@
+# Use the SAME certificate as the published app
+storeFile=signing/existing-release.jks
+storePassword=
+keyAlias=
+keyPassword=

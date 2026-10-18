@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <application android:name="com.toosarax.jetjo.qa.QaApplication" android:label="JET Android QA" tools:replace="android:label">
+        <activity android:name="com.toosarax.jetjo.MainActivity" tools:node="remove" />
+        <activity android:name="com.toosarax.jetjo.qa.SceneSmokeActivity"
+            android:exported="true" android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            tools:ignore="LockedOrientationActivity,DiscouragedApi">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.toosarax.jetjo.qa.GalleryActivity"
+            android:exported="true" android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="JET Gallery"
+            tools:ignore="LockedOrientationActivity,DiscouragedApi" />
+    </application>
+</manifest>

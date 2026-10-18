@@ -1,0 +1,239 @@
+{
+  "pack": "JET Worlds",
+  "result": "PASS",
+  "images": 16,
+  "tracks": 12,
+  "soundtrack_seconds": 1366.6213378684806,
+  "bytes": 248500602,
+  "checks": "All media decodes; distinct files; correct formats and whole-bar durations; bounded volume; no clipping; low DC offset; continuous sample boundaries. No generated padding.",
+  "files": [
+    {
+      "id": "aurora",
+      "type": "background",
+      "bytes": 469747,
+      "sha256": "6e40f3c194aa95282588d97eac6921e0399fcafe433758bd0872406ba2d42f36"
+    },
+    {
+      "id": "solar",
+      "type": "background",
+      "bytes": 473714,
+      "sha256": "3a216ebde446ce1230e693058bd6417c4f9f3dc83a9eef82e37be57ca6527cd6"
+    },
+    {
+      "id": "ocean",
+      "type": "background",
+      "bytes": 449456,
+      "sha256": "6b7fc4c6bdc3ce138ee4c42f806cfeee73644c46ee779ca852db9e0b81407887"
+    },
+    {
+      "id": "candy",
+      "type": "background",
+      "bytes": 457504,
+      "sha256": "2cbfcb9b65b14d3d4964d60ba09d61c47051770de0eefd6d98a48c6a7b049997"
+    },
+    {
+      "id": "cyber",
+      "type": "background",
+      "bytes": 505473,
+      "sha256": "3208fba4e3346d46ab504e28e91df6bf42181bf95a222cd600e3b10d5cd630e1"
+    },
+    {
+      "id": "crystal",
+      "type": "background",
+      "bytes": 426294,
+      "sha256": "cf1ef5fe7bfa60b44d53f4d7b8ce119ea8bc3f018d25380632978206608a3ea6"
+    },
+    {
+      "id": "lunar",
+      "type": "background",
+      "bytes": 491077,
+      "sha256": "c95877ace4c83b32760543ed40183c02f850248b39f8f7fa873b8563c95d5818"
+    },
+    {
+      "id": "rainbow",
+      "type": "background",
+      "bytes": 471822,
+      "sha256": "fc1e2e45689af38cb37ecda103544d6d3fd2792f5ecd79839daf21a7e8953ab9"
+    },
+    {
+      "id": "forest",
+      "type": "background",
+      "bytes": 467573,
+      "sha256": "868f9943b784687ca7bfdbde939192255266a4e1c5bf30b93536613eb60d6f3d"
+    },
+    {
+      "id": "coral",
+      "type": "background",
+      "bytes": 482479,
+      "sha256": "9911845652f76eaa38d88a4d98e40755987cfe4ae09ff82e16cc817f2cc1daf9"
+    },
+    {
+      "id": "toy",
+      "type": "background",
+      "bytes": 501027,
+      "sha256": "514f81982b66ff742e1d33648f46f18ca41aac8a87beb2fffff643c1738dec24"
+    },
+    {
+      "id": "arcade",
+      "type": "background",
+      "bytes": 465434,
+      "sha256": "9d30508dfbc6cffac74a915bc230e7521b93a3bda4882e8b7799df9ec054a60f"
+    },
+    {
+      "id": "sunset",
+      "type": "background",
+      "bytes": 489782,
+      "sha256": "afa3b512c427d5e4d077bfab7eac37ee15f6d02644c9abe2c78c9caeb1676c81"
+    },
+    {
+      "id": "volcano",
+      "type": "background",
+      "bytes": 432708,
+      "sha256": "281a1284c66fac77c20bf9c2c56469b5113b69762198f087097d9fd5eba24cb3"
+    },
+    {
+      "id": "snow",
+      "type": "background",
+      "bytes": 419335,
+      "sha256": "6f9965955d2eb1777a8a87dc2b1f757d20d7df0fb1ed94ed77fe372f2bdc4dc9"
+    },
+    {
+      "id": "spaceport",
+      "type": "background",
+      "bytes": 414789,
+      "sha256": "850a0a5a67b17831d62e4226c1e16051d7ea4eb3e7e666c0cf93729a273e4629"
+    },
+    {
+      "id": "aurora_drift",
+      "type": "music",
+      "bytes": 19756844,
+      "seconds": 112.0,
+      "peak": 0.59149,
+      "rms": 0.07502,
+      "dc": 0.000197,
+      "loop_sample_delta": 0.00104,
+      "sha256": "528d89ba9b0dba7db9860b5fd9ce60c0afbbb8cdfc38bdca7771a41e65a451b0"
+    },
+    {
+      "id": "solar_heartbeat",
+      "type": "music",
+      "bytes": 19958444,
+      "seconds": 113.14285714285714,
+      "peak": 0.59149,
+      "rms": 0.08,
+      "dc": 0.000291,
+      "loop_sample_delta": 0.00024,
+      "sha256": "a6a21f4f0d382fd7d8fde106bed75a68cbd69053d93f51a46b730f1917743de0"
+    },
+    {
+      "id": "ocean_glide",
+      "type": "music",
+      "bytes": 20321324,
+      "seconds": 115.2,
+      "peak": 0.59149,
+      "rms": 0.07204,
+      "dc": 0.000184,
+      "loop_sample_delta": 0.00198,
+      "sha256": "ea2142b108e395d997d2226345da16ed9abbfd04b7d9bd595f5270d41490e1ae"
+    },
+    {
+      "id": "candy_bounce",
+      "type": "music",
+      "bytes": 19756844,
+      "seconds": 112.0,
+      "peak": 0.59149,
+      "rms": 0.06994,
+      "dc": 0.000226,
+      "loop_sample_delta": 0.00354,
+      "sha256": "8b28bdebbc2cbb3c5f66f6ce291540c72078db9f1aadc4a65508d13b7c81bc64"
+    },
+    {
+      "id": "cyber_cruise",
+      "type": "music",
+      "bytes": 20563244,
+      "seconds": 116.57142857142857,
+      "peak": 0.59149,
+      "rms": 0.0806,
+      "dc": 0.000312,
+      "loop_sample_delta": 0.00092,
+      "sha256": "f2ab23462d12b0136dda027064f89b909c68004c3924597806e2517c24a8c0bc"
+    },
+    {
+      "id": "crystal_echo",
+      "type": "music",
+      "bytes": 19756844,
+      "seconds": 112.0,
+      "peak": 0.59149,
+      "rms": 0.0721,
+      "dc": 6.9e-05,
+      "loop_sample_delta": 0.00092,
+      "sha256": "91c38f834218c038e21d4152b73f3e503e96a3ffa9d09a1986271b090670fb9b"
+    },
+    {
+      "id": "forest_fireflies",
+      "type": "music",
+      "bytes": 20013424,
+      "seconds": 113.45453514739229,
+      "peak": 0.59149,
+      "rms": 0.0816,
+      "dc": 0.000233,
+      "loop_sample_delta": 0.00137,
+      "sha256": "cf3c59f06c07f0aee68b87489f984524228b62b8bec0bddc21056d2a21047440"
+    },
+    {
+      "id": "coral_waltz",
+      "type": "music",
+      "bytes": 20384044,
+      "seconds": 115.55555555555556,
+      "peak": 0.59149,
+      "rms": 0.07414,
+      "dc": 0.000236,
+      "loop_sample_delta": 0.00067,
+      "sha256": "688f3e76991a44db52de333a2f1c27b0ec1b0060a29a78be19c6a41cb64df807"
+    },
+    {
+      "id": "toy_parade",
+      "type": "music",
+      "bytes": 19756844,
+      "seconds": 112.0,
+      "peak": 0.59149,
+      "rms": 0.077,
+      "dc": 0.000266,
+      "loop_sample_delta": 0.0025,
+      "sha256": "1b4115b9532823c17592390fa004a759c0961986f925e99e30d61813731b9e70"
+    },
+    {
+      "id": "arcade_flux",
+      "type": "music",
+      "bytes": 19992044,
+      "seconds": 113.33333333333333,
+      "peak": 0.59149,
+      "rms": 0.07196,
+      "dc": 0.000304,
+      "loop_sample_delta": 0.00089,
+      "sha256": "09e636e7a929bd9453eb53d5f651b38d2a1deb4bac133f05202151f2691c9bc0"
+    },
+    {
+      "id": "sunset_soar",
+      "type": "music",
+      "bytes": 20286044,
+      "seconds": 115.0,
+      "peak": 0.59149,
+      "rms": 0.07426,
+      "dc": 0.000162,
+      "loop_sample_delta": 0.00089,
+      "sha256": "13af4b282694825078766e377b48f796b0458ff277a30c522dfb4107c819dc67"
+    },
+    {
+      "id": "spaceport_launch",
+      "type": "music",
+      "bytes": 20526588,
+      "seconds": 116.36362811791383,
+      "peak": 0.59149,
+      "rms": 0.07701,
+      "dc": 0.000272,
+      "loop_sample_delta": 0.00052,
+      "sha256": "0ecb6115fcbb76077bcf7dda466eb3b38ef6ad8f360cf181d9addaf38426d887"
+    }
+  ]
+}
