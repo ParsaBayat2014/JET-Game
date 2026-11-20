@@ -15,6 +15,11 @@ if not all(matches(name, digest) for name, digest in EXPECTED.items()):
     except ModuleNotFoundError:
         raise SystemExit('Install generation dependencies: python -m pip install -r tools/requirements-content.txt')
     content.generate_music()
-if not all(matches(name, digest) for name, digest in EXPECTED.items()):
-    raise SystemExit('Soundtrack checksum mismatch; use the pinned content dependencies with Python 3.11.')
+missing_or_mismatched=[]
+for name,digest in EXPECTED.items():
+    path=FOLDER/name
+    actual=hashlib.sha256(path.read_bytes()).hexdigest() if path.is_file() else 'missing'
+    if actual!=digest:missing_or_mismatched.append(f'{name}: expected {digest}, got {actual}')
+if missing_or_mismatched:
+    raise SystemExit('Soundtrack checksum mismatch:\n'+'\n'.join(missing_or_mismatched))
 print('PASS: all 12 soundtrack files match the original build-206 SHA-256 checksums.')
