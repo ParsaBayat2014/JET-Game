@@ -1,4 +1,6 @@
-# Proposed acquisition handover
+# Archived historical document
+
+This file is retained only for repository history. JET is now maintained as an open-source project; it is not part of the current public project scope. Use [README.md](README.md) and [LICENSES.md](LICENSES.md) for current information.
 
 This is a preparation checklist, not a signed agreement or promise of third-party approval.
 
