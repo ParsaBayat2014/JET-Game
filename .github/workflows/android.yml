@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: [main]
 
+concurrency:
+  group: android-ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: read
 
@@ -29,3 +33,12 @@ jobs:
         run: python -m pip install -r tools/requirements-content.txt
       - name: Run unit tests and lint
         run: ./gradlew :app:testDebugUnitTest :app:lintDebug --no-daemon
+      - name: Upload test and lint reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: android-verification-reports
+          path: |
+            app/build/test-results/**
+            app/build/reports/**
+          if-no-files-found: ignore
