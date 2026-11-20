@@ -33,6 +33,14 @@ jobs:
         run: python -m pip install -r tools/requirements-content.txt
       - name: Run unit tests and lint
         run: ./gradlew :app:testDebugUnitTest :app:lintDebug --no-daemon
+      - name: Build preview APK
+        run: ./gradlew :app:assemblePreview --no-daemon
+      - name: Upload preview APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: jet-preview-apk
+          path: app/build/outputs/apk/preview/*.apk
+          if-no-files-found: error
       - name: Upload test and lint reports
         if: always()
         uses: actions/upload-artifact@v4
