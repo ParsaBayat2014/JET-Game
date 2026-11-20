@@ -15,3 +15,5 @@ The maintainer will acknowledge a valid report, assess severity, prepare and tes
 ## Scope
 
 Relevant areas include local save integrity, receipt handling, network/local multiplayer boundaries, exported Android components, build configuration and dependency risks. This version does not claim server-authoritative purchases or online matchmaking.
+
+The repository also runs CodeQL on Java changes and dependency review on pull requests when GitHub Actions is available. Automated findings are reviewed by the maintainer; a green workflow is not a substitute for manual security review.
