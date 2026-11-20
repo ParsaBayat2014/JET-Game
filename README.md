@@ -14,6 +14,8 @@ The project is maintained by its creator. Bug reports, focused pull requests and
 - Review issues and pull requests as time permits, with security reports handled privately.
 - Publish release notes that distinguish verified behavior from planned or device-dependent work.
 
+See [CHANGELOG.md](CHANGELOG.md) for the version history and [RELEASE_PROCESS.md](RELEASE_PROCESS.md) for the repeatable release checklist.
+
 ## Included here
 
 - Native Java game with GLES2/Canvas rendering, 48 campaign stages and local multiplayer.
