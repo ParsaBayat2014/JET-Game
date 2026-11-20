@@ -16,6 +16,8 @@ The project is maintained by its creator. Bug reports, focused pull requests and
 
 See [CHANGELOG.md](CHANGELOG.md) for the version history, [RELEASE_PROCESS.md](RELEASE_PROCESS.md) for the repeatable release checklist, and [SUPPORT.md](SUPPORT.md) for help.
 
+Maintainer and program-review context is documented in [docs/MAINTAINER-CASE.md](docs/MAINTAINER-CASE.md), including current limitations and intended security/maintenance work.
+
 ## Included here
 
 - Native Java game with GLES2/Canvas rendering, 48 campaign stages and local multiplayer.
