@@ -16,7 +16,7 @@ python -m pip install -r tools/requirements-content.txt
 python tools/prepare_music.py
 ```
 
-The second command generates missing soundtrack files and validates all 12 against the original hashes. Android preBuild also calls this step; override the Python executable with -PpythonExecutable=/absolute/path/to/python if needed.
+The second command generates missing soundtrack files and validates all 12 against the canonical hash manifest for the current operating system. Small floating-point differences between Windows and Linux are tracked in separate manifests; this keeps verification strict without treating a cross-platform build as an unverified success. Android preBuild also calls this step; override the Python executable with -PpythonExecutable=/absolute/path/to/python if needed.
 
 ## Build an evaluation APK
 

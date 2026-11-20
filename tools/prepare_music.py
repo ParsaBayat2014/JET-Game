@@ -1,8 +1,10 @@
 """Recreate the exact version-2 soundtrack omitted from Git; no downloads."""
 from pathlib import Path
-import hashlib, json, importlib.util
+import hashlib, json, importlib.util, platform
 ROOT = Path(__file__).resolve().parents[1]
-EXPECTED = json.loads((ROOT / 'tools/music-sha256.json').read_text())
+base_manifest=ROOT / 'tools/music-sha256.json'
+platform_manifest=ROOT / 'tools' / ('music-sha256-'+platform.system().lower()+'.json')
+EXPECTED = json.loads((platform_manifest if platform_manifest.is_file() else base_manifest).read_text())
 FOLDER = ROOT / 'app/src/main/assets/content/music'
 def matches(name, digest):
     path = FOLDER / name
